@@ -91,3 +91,15 @@ footer{
     padding-left: 5px;
     font-size: 0.8rem;
 }
+
+@media screen and (max-width:768px){
+    footer{
+        display: block;
+    }
+
+    .icon{
+        color: #555;
+        font-size: 35px;
+        text-align: center;
+    }
+}
