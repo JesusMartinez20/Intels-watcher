@@ -46,9 +46,10 @@
             </div>
         </div>
     </nav>
-    
+    <div class="options-nav">
+            <h1><b>Portal de Denuncias</b></h1>
+    </div>
     <div class="about">
-        <h1><b>Portal de Denuncias</b></h1>
         <h2 class="portal-h2">Generar reporte</h2>
         <p class="about-text">
             No tenga miedo de denunciar y compartir los detalles de cualquier acción o comportamiento que crea que es 
