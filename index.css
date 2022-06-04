@@ -103,3 +103,19 @@ footer{
         text-align: center;
     }
 }
+
+/*Buffers*/
+
+.top-buffer{
+    margin-top: 64px;
+}
+
+.bottom-buffer{
+    margin-bottom: 150px;
+}
+
+/*Texto*/
+.text-justify{
+    text-align: justify;
+}
+
