@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!doctype html>
 <html lang="es">
 
@@ -38,7 +35,7 @@
                             Menú
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="buzon.php">Buzón de ética</a></li>
+                            <li><a class="dropdown-item" href="buzon.html">Buzón de ética</a></li>
                             <li><a class="dropdown-item" href="tarjetas.html">Blog</a></li>
                             <li><a class="dropdown-item" href="codigo.html">Código de ética</a></li>
                         </ul>
@@ -50,7 +47,7 @@
             <h1><b>Portal de Denuncias</b></h1>
     </div>
 
-    <main class="page top-buffer">
+    <main class="page top-buffer bottom-buffer">
 
         <div class="container">
             <div class="row">
@@ -117,7 +114,7 @@
                     
                 }
             </script>
-            <form class="portal">
+            <form action="sendMail.php" method="post" class="portal">
                 <h2>Contacto</h2>
                 <div class="form-check">
                     <input class="form-check-input position-static" type="checkbox" id="rbAnonimo" value="anonimo"  onclick="anonimo()">
@@ -128,11 +125,11 @@
                 <div class="row" id="DivNombre">
                     <div class="col">
                         <label for="txtNombre">Nombre</label>
-                        <input type="text" class="form-control" placeholder="Nombre(s)" id="txtNombre">
+                        <input type="text" class="form-control" placeholder="Nombre(s)" id="txtNombre" name="nombre">
                     </div>
                     <div class="col">
                         <label for="txtNombre">Apellidos</label>
-                        <input type="text" class="form-control" placeholder="Apellidos" id="txtApellido">
+                        <input type="text" class="form-control" placeholder="Apellidos" id="txtApellido" name="apellido">
                     </div>
                 </div>
                 <div class="form-group">
@@ -141,7 +138,7 @@
                 </div>
                 <div class="form-group">
                     <label for="txtEmail">Dirección de Email</label>
-                    <input type="email" class="form-control" id="txtEmail" placeholder="nombre@ejemplo.com">
+                    <input type="email" class="form-control" id="txtEmail" placeholder="nombre@ejemplo.com" name="mail">
                 </div>
                 <div class="form-group">
                     <label for="txtHorarioContacto">Horario en el que puede ser contactado(a)</label>
@@ -173,7 +170,7 @@
                         Describe con la mayor cantidad de detalles que te sea posible.
                         Incluye todos los nombres de proyectos y programas relevantes.
                     </label>
-                    <textarea class="form-control" id="txtDescripcion" rows="7" placeholder="Escribe aquí"></textarea>
+                    <textarea class="form-control" id="txtDescripcion" rows="7" placeholder="Escribe aquí" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="txtInvolucrados">
@@ -216,7 +213,7 @@
                         <b>Archivo.</b> 
                         Si tienes algún archivo que pueda ser de relevancia para la revisión del incidente por favor agrégalo.
                     </label>
-                    <input type="file" class="custom-file-input" id="archivo" style="margin-top: 10px;" required>
+                    <input type="file" class="custom-file-input" id="archivo" style="margin-top: 10px;">
                 </div>
                 
                 <h2>Seguimiento</h2>
@@ -228,12 +225,12 @@
                     <div class="form-group col-md-4">
                         <label for="txtPassword"><a style="color:red;">*</a> <b>Contraseña.</b> 
                         </label>
-                        <input type="password" class="form-control" id="txtPassword">
+                        <input type="password" class="form-control" id="txtPassword" required>
                     </div>
                     <div class="form-group col-md-4">
                         <label for="txtPassword2"><a style="color:red;">*</a> <b>Confirma la contraseña.</b> 
                         </label>
-                        <input type="password" class="form-control" id="txtPassword2">
+                        <input type="password" class="form-control" id="txtPassword2" required>
                     </div>
                 </div>
                 <div class="col text-center">
