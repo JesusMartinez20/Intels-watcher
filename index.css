@@ -48,6 +48,13 @@
     color: #555;
 }
 
+h1{
+    text-align: center;
+    color: #0071C5; 
+    font-weight: lighter;
+    margin-block: 20px;
+}
+
 h2{
     text-align: center;
     color: #0071C5; 
